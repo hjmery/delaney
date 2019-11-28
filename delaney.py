@@ -18,8 +18,6 @@ for i in range(len(countries)):
 for i in range(len(countries)):
 	requestlist.append(requests.get(urls[i]))
 
-r=requests.get("https://www.cia.gov/library/publications/resources/the-world-factbook/graphics/flags/large/us-lgflag.gif")
-
 #need to create list or dic to store values of flag and have it iterate over that list in order to download all gifs
 
 for i in range(len(countries)):
