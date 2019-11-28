@@ -1,8 +1,12 @@
 import requests
 import time
 
+f = open('flags.txt','r')
+countries = f.readlines()
+for i in range(len(countries)):
+	countries[i] = countries[i].strip()
+
 img_url="https://www.cia.gov/library/publications/resources/the-world-factbook/graphics/flags/large/"
-countries = ['us', 'aa', 'ac', 'ae', 'af']
 urls = []
 filenames = []
 requestlist = []
